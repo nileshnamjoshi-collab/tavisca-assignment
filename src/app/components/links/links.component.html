@@ -1,0 +1,71 @@
+<!-- <div>
+  <title-element tabindex="0" name="{{ headerTitle }}"></title-element>
+</div> -->
+<div class="list">
+  <table>
+    <caption attr.aria-label="tableTitle">
+      <div>
+        <h2 class="heading" tabindex="0">
+          {{ tableTitle }}
+        </h2>
+      </div>
+    </caption>
+    <tr>
+      <th tabindex="1">Sr. No.</th>
+      <th tabindex="2">Link Title</th>
+      <th tabindex="3">Description</th>
+      <th tabindex="4">Category</th>
+      <th tabindex="5">Actions</th>
+    </tr>
+    <tr *ngFor="let item of sportsData; let i = index">
+      <td tabindex="i">{{ item.id }}</td>
+      <td tabindex="i">{{ item.title }}</td>
+      <td tabindex="i">{{ item.desc }}</td>
+      <td tabindex="i">{{ item.categories }}</td>
+      <td tabindex="i">
+        <span class="crud-btns">
+          Update
+        </span>
+        <span>|</span>
+        <span class="crud-btns">
+          Delete
+        </span>
+        <!-- <button
+          type="button"
+          tabindex="0"
+          aria-label="Update"
+          [disabled]="!userLoginStatus"
+          class="button"
+          (click)="updateSports(item.id)"
+        >
+          Update
+        </button> -->
+        <!-- <button
+          type="button"
+          tabindex="0"
+          aria-label="Delete"
+          [disabled]="!userLoginStatus"
+          class="button"
+          (click)="deleteSports(item.id)"
+        >
+          Delete
+        </button> -->
+      </td>
+    </tr>
+  </table>
+  <!-- <div class="add">
+    <div class="table-bottom">
+      <button
+        type="button"
+        tabindex="0"
+        aria-label="Add Sport"
+        class="add-button"
+        [disabled]="!userLoginStatus"
+        (click)="addSports()"
+      >
+        Add Sport
+      </button>
+      <footer-element></footer-element>
+    </div>
+  </div> -->
+</div>

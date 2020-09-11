@@ -1,0 +1,41 @@
+<div class="grid-container">
+  <div class="login">
+    <p tabindex="0">Login</p>
+  </div>
+  <div>
+    <form [formGroup]="loginForm" class="form">
+      <label for="username">User Name :</label>
+      <input
+        type="text"
+        formControlName="username"
+        id="username"
+        placeholder="Please Enter Name"
+        aria-label="Username"
+        autocomplete="off"
+      />
+
+      <label for="password">Password :</label>
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Please Enter Password"
+        aria-label="Password"
+        id="password"
+        autocomplete="off"
+      />
+    </form>
+  </div>
+  <div class="div2">
+    <button
+      type="button"
+      class="button"
+      tabindex="0"
+      (click)="onSubmit(loginForm.value)"
+      [disabled]="loginForm.invalid"
+      aria-label="Submit Login Form"
+    >
+      Submit
+    </button>
+    <button class="button" type="reset">Reset</button>
+  </div>
+</div>

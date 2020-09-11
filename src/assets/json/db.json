@@ -1,0 +1,44 @@
+{
+  "login": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "username": "admin1",
+      "password": "admin1",
+      "id": "PWUs4OZ"
+    },
+    {
+      "username": "tavisca",
+      "password": "tavisca",
+      "id": "yQCH5Xt"
+    },
+    {
+      "username": "vaibhav",
+      "password": "vaibhav",
+      "id": "7alg37n"
+    }
+  ],
+  "data": [
+    {
+      "id": "1",
+      "sportsTitle": "wrestling and martial arts",
+      "description": "is an ancient martial arts style of fighting",
+      "category": "Dual Sports"
+    },
+    {
+      "id": "2",
+      "sportsTitle": "Basketball",
+      "category": "Team Sports",
+      "description": "The game is played on a rectangular floor called the court"
+    },
+    {
+      "id": "3",
+      "sportsTitle": "Hockey",
+      "category": "Team Sports",
+      "description": "Field hockey is played in the Summer Olympic Games."
+    }
+  ]
+}

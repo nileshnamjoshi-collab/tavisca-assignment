@@ -1,0 +1,67 @@
+<!-- <div class="div1">
+  <div>
+    <title-element tabindex="0" name="{{ headerTitle }}"></title-element>
+  </div>
+  <div class="ui-button">
+    <button
+      type="button"
+      id="toggle-button"
+      class="header-button"
+      tabindex="0"
+      (click)="changeTheme()"
+    >
+      Toggle Theme
+    </button>
+    <button
+      type="button"
+      id="login-button"
+      class="header-button"
+      tabindex="0"
+      (click)="login()"
+    >
+      Log In
+    </button>
+    <button
+      type="button"
+      id="register-button"
+      class="header-button"
+      tabindex="0"
+      (click)="register()"
+    >
+      Sign up
+    </button>
+    <button
+      type="button"
+      id="logout-button"
+      class="header-button"
+      tabindex="0"
+      (click)="logout()"
+    >
+      Logout
+    </button>
+  </div>
+</div>
+ -->
+<div class="topnav" aria-label="Toggle navigation">
+  <a
+    aria-label="Aative Link Home"
+    class="active"
+    [routerLink]="['/']"
+    routerLinkActive="router-link-active"
+    >Home</a
+  >
+  <!--   <a href="#news">News</a>-->
+  <a (click)="changeTheme()">Toggle Theme</a>
+  <div class="topnav-right">
+    <a
+      *ngIf="!userLoginStatus"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      >Sign in</a
+    >
+    <a *ngIf="userLoginStatus">Welcome </a>
+    <a [routerLink]="['/registermodule']" routerLinkActive="router-link-active"
+      >Sign up</a
+    >
+  </div>
+</div>
